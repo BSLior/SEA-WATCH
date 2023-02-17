@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SEA WATCH</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    x
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logoS" src="imags/sea watch logo.png" alt="SEA WATCH Logo"/> <!--הלוגו של המשחק שלכם-->
+                SEA WATCH - Sorting game
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <p>
+                <h1>אודות</h1>
+                <br />
+                אפיון ופיתוח: פארי סוסקין, ליאור בן סימון ורעות היטנר
+                <br />
+                אופיין ופותח במסגרת פרוייקט בקורסים:
+                <br />
+                סביבות לימוד אינטראקטיביות+ תכנות+ תכנות אינטראקציה ואנימציה
+                <br />
+                תשפ"ג 
+                <br />
+                <img id="hitLOGO" src="imags/HIT_logo_50_years_.jpg" alt="HIT logo" style="block-size:60px"/>
+                <br />
+                <a href="https://www.hit.ac.il/telem/overview">הפקולטה לטכנולוגיות למידה</a>
+            </p>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p>
+                <h1>הוראות</h1>
+                <br />
+               יש לאסוף ולמיין את כל פריטי האשפה בזמן המהיר ביותר ועם כמה שפחות טעויות.
+                <br />
+                כדי למיין את פריט האשפה יש לגרור אותו אל הרשת הנכונה בהתאם לקטגוריה המתאימה לו.
+                <br />
+                בהצלחה!
+            </p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם -->
+            <iframe id="gameIframe" src="https://i.simmer.io/@ReutHitner/sea-watch-sorting-game" frameBorder="0" allowfullscreen="">Browser not compatible.></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
